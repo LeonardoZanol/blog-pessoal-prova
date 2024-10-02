@@ -20,8 +20,16 @@ header {
     z-index: 1000;
 }
 
+main {
+    padding: 60px 10px 10px 10px;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
 h1 {
-    font-size: 25px;
+    font-size: 30px;
     margin-right: 20px;
 }
 
@@ -37,7 +45,7 @@ ul, li {
 }
 
 a {
-    font-size: 20px;
+    font-size: 25px;
     display: inline-block;
     transition: transform 0.3s ease;
 }
@@ -56,7 +64,7 @@ a:hover {
     background-color: #f4f4f4;
     padding: 50px;
     border-radius: 10px;
-    margin: 100px 0 20px;
+    margin: 20px 0;
 }
 
 #sobre h2 {
@@ -74,8 +82,8 @@ a:hover {
 #posts {
     background-color: #fff;
     padding: 50px;
-    border-radius: 10px;
-    border: 2px solid rgb(134, 2, 2);
+    border-radius: 20px;
+    border: 5px solid rgb(134, 2, 2);
     margin-bottom: 20px;
 }
 
@@ -101,11 +109,30 @@ article p {
     color: #555;
 }
 
+#contato {
+    margin-bottom: 70px;
+}
+
+#contato h2 {
+    font-size: 40px;
+    color: rgb(134, 2, 2);
+    margin-bottom: 10px;
+}
+
 form {
     background-color: #fff;
     padding: 50px;
     border: 5px solid rgb(134, 2, 2);
     border-radius: 20px;
+    margin-top: 20px;
+}
+
+#form-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
 }
 
 #input-box {
@@ -122,17 +149,21 @@ form {
     color: rgb(134, 2, 2);
 }
 
-#contato h2 {
-    font-size: 40px;
-    color: rgb(134, 2, 2);
-    margin-bottom: 10px;
+#input-box input, #input-box textarea {
+    padding: 10px;
+    border: 2px solid rgb(134, 2, 2);
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
-#form-input {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+#input-box input:focus, #input-box textarea:focus {
+    outline: none;
+    border-color: rgb(156, 1, 1);
+    transform: scale(1.03);
+    box-shadow: 0 0 5px rgba(156, 1, 1, 0.5);
 }
 
 #form-button {
@@ -150,7 +181,7 @@ form {
     cursor: pointer;
     transition: transform 0.3s ease;
     margin-top: 20px;
-    color: #fff
+    color: #fff;
 }
 
 #form-button button:hover {
